@@ -102,10 +102,6 @@ p <- ggplot() +
                      expand = c(0,0)) +
   scale_color_manual(values = my2cols) +
   scale_fill_manual(values = my2cols) +
-  geom_vline(xintercept = 0,
-             color = "black",
-             linetype = "dashed",
-             size = 0.5) +
   facet_wrap(~ses_variance, nrow = 1, labeller = sigma_labeller) +
   ggtheme_facet +
   theme(
